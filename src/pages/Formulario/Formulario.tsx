@@ -5,10 +5,15 @@ import Face from '../../assets/facebook.png'
 import Insta from '../../assets/instagram.png'
 import Twitter from '../../assets/twitter.png'
 import Mad from '../../assets/mad.png'
+import SmallMad from '../../assets/small_mad.png'
 import Man_One from '../../assets/man_one.png'
+import SmallManOne from '../../assets/small_man_one.png'
 import Woman_One from '../../assets/woman_one.png'
+import SmallWomanOne from '../../assets/small_woman_one.png'
 import Man_Two from '../../assets/man_two.png'
+import SmallManTwo from '../../assets/small_man_two.png'
 import Woman_Two from '../../assets/woman_two.png'
+import SmallWomanTwo from '../../assets/small_woman_two.png'
 import { ButtonHeader } from '../../components/ButtonHeader/ButtonHeader';
 import { ButtonAvatar } from '../../components/ButtonAvatar/ButtonAvatar';
 import { InputForm } from '../../components/Input/Input'
@@ -16,19 +21,24 @@ import { Button } from '../../components/Button/Button'
 
 const imageAvatar = [
   {
-    image: Mad
+    image: Mad,
+    smallImage: SmallMad
   },
   {
-    image: Man_One
+    image: Man_One,
+    smallImage: SmallManOne
   },
   {
-    image: Woman_One
+    image: Woman_One,
+    smallImage: SmallWomanOne
   },
   {
-    image: Man_Two
+    image: Man_Two,
+    smallImage: SmallManTwo
   },
   {
-    image: Woman_Two
+    image: Woman_Two,
+    smallImage: SmallWomanTwo
   }
 ]
 

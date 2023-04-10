@@ -6,6 +6,10 @@ export const Button = styled.button`
   border: none;
   color: #fff;
   text-align: center;
-  width: 10vw;
+  width: 12vw;
   height: 40px;
+
+  @media(max-width: 768px){
+    width: 25vw;
+  }
 `;

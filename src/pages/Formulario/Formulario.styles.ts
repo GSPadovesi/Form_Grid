@@ -3,9 +3,16 @@ import { ButtonHeader } from '../../components/ButtonHeader/ButtonHeader';
 
 export const Container = styled.section`
   height: 100vh;
+  width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* padding: 20px; */
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* padding: 20px; */
+
+  @media(max-width: 768px){
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const DivIllustration = styled.div`
@@ -21,13 +28,18 @@ export const DivIllustration = styled.div`
     height: 60%;
     background-color: #E3BE54;
     align-self: center;
+
+    @media(max-width: 1024px){
+      width: 40%;
+      height: 60%;
+    }
   }
 `;
 
 export const IllustrationTitleDiv = styled.div`
   display: flex;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 10px;
   padding: 10px;
   background-color: #E3BE54;
 
@@ -78,7 +90,7 @@ export const DivForm = styled.div`
   /* justify-content: space-around; */
   align-items: center;
   padding: 20px;
-  gap: 55px;
+  gap: 45px;
 `;
 
 export const FormHeader = styled.nav`
@@ -95,6 +107,7 @@ export const HeaderUl = styled.ul`
 
 export const HeaderLi = styled.li`
   list-style: none;
+  cursor: pointer;
 `;
 
 
